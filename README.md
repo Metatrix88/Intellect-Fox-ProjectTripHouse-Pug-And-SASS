@@ -1,6 +1,6 @@
 # Intellect-Fox-ProjectTripHouse-Pug-And-SASS
 
-### Usage
+### This is my first project using technologies such as PUG and SCSS. In order to run it, download this repository and do the instructions below.
 
 `npm install` from root directory to install all dependencies.
 
