@@ -1,0 +1,120 @@
+.header {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  left: 0;
+  right: 0;
+
+  &__logo {
+    margin-bottom: 6px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 48px;
+  }
+
+  &__links {
+    padding-top: 6px;
+    padding-bottom: 12px;
+  }
+
+  &__link {
+    position: relative;
+    color: var(--general-white-color);
+  }
+
+  &__link::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 40px;
+    width: 0;
+    height: 4px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease-out;
+  }
+
+  &__link:hover::after,
+  &__link:focus::after {
+    width: 85%;
+  }
+
+  &__button-switch {
+    margin-top: 5px;
+    margin-bottom: 11px;
+  }
+
+  &__button-login {
+    margin-bottom: 6px;
+  }
+
+  &__button-menu {
+    display: none;
+  }
+
+  &__icon {
+    fill: var(--general-white-color);
+    width: 40px;
+    aspect-ratio: 1/1;
+  }
+
+  &__icon-switch {
+    width: 30px;
+  }
+
+  &__icon:hover,
+  button:focus &__icon {
+    fill: var(--accent-color);
+  }
+}
+
+@media (max-width: 1024px) {
+  /* For mobile tablets: */
+  .header {
+    margin-top: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    align-items: center;
+
+    &__logo {
+      margin: 0;
+    }
+
+    &__links {
+      display: none;
+    }
+
+    &__button-switch,
+    &__button-login {
+      margin: 0;
+    }
+
+    &__button-menu {
+      display: block;
+    }
+
+    &__icon {
+      width: 30px;
+    }
+
+    &__icon-switch {
+      width: 24px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  /* For mobile phones: */
+  .header {
+    &__icon {
+      width: 24px;
+    }
+
+    &__icon-switch {
+      width: 16px;
+    }
+  }
+}

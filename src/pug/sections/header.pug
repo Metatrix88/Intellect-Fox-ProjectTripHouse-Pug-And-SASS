@@ -1,0 +1,26 @@
+mixin header
+  header.container.header.lg-2-col
+    a.logo.header__logo(href='#')
+      svg.logo__icon
+        use(href='#logo')
+    ul.header__menu
+      li.header__links
+        ul.list
+          li
+            a.link.header__link(href='#') Stays
+          li
+            a.link.header__link(href='#') Attractions
+      li.header__buttons
+        ul.list
+          li.header__button-switch
+            button(type='button', aria-label='Screen Theme Switch')
+              svg.header__icon.header__icon-switch
+                use(href='#night')
+          li.header__button-login
+            button(type='button', aria-label='Login')
+              svg.header__icon
+                use(href='#login')
+          li.header__button-menu
+            button(type='button', aria-label='Menu')
+              svg.header__icon
+                use(href='#menu')

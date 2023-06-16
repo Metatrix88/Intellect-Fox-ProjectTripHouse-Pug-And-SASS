@@ -1,0 +1,84 @@
+.apartments {
+  position: relative;
+  background-color: var(--bg-color);
+  padding-top: var(--block-space);
+  padding-bottom: var(--block-space);
+
+  &__title {
+    margin-bottom: var(--title-bottom);
+  }
+
+  &__img {
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    margin-bottom: 24px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+
+  &__subtitle {
+    color: var(--secondary-text-color);
+  }
+
+  &__button-next {
+    top: 48.5%;
+    right: 84px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* For mobile tablets: */
+  .apartments {
+    &__card {
+      margin-bottom: 32px;
+    }
+
+    &__img {
+      margin-bottom: calc(var(--unit) * 2);
+    }
+
+    &__link {
+      margin-bottom: calc(var(--unit) * 2);
+    }
+
+    &__button-next {
+      top: 50%;
+      right: 30px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  /* For mobile phones: */
+  .apartments {
+    &__card {
+      margin-bottom: 0;
+    }
+
+    &__img {
+      margin-bottom: var(--unit);
+    }
+
+    &__link {
+      margin-bottom: 4px;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+    }
+
+    &__button-next {
+      top: 49%;
+      right: 7px;
+    }
+  }
+
+  ._mobile-none {
+    display: none;
+  }
+}

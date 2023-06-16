@@ -1,0 +1,23 @@
+mixin desktop-form
+  form.lg-4-col.search-form--desktop.desktop-form
+    .desktop-form__input
+      input#city.input.desktop-form__input-city(
+        type='text',
+        name='city',
+        title='Your destination or hotel name',
+        required=''
+      )
+      label(for='city') Your destination or hotel name
+    .desktop-form__input
+      input#date.input.desktop-form__input-date(type='text', name='date', title='Check-in — Check-out', required='')
+      label(for='date') Check-in &mdash; Check-out
+    .desktop-form__input
+      label.visually-hidden(for='filter') Selecting a number
+      input#filter.input.desktop-form__input-filter(
+        type='text',
+        name='filter',
+        placeholder='2 Adults — 0 Children — 1 Room',
+        title='2 Adults — 0 Children — 1 Room'
+      )
+    button.button.button--blue.desktop-form__button-search
+      | Search

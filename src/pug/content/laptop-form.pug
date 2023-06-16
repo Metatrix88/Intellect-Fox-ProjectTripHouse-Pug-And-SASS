@@ -1,0 +1,36 @@
+mixin laptop-form
+  form.md-2-col.sm-2-col.search-form--laptop.laptop-form
+    .laptop-form__input-wrap.laptop-form__input--full-width
+      .laptop-form__destination-wrap
+        button.laptop-form__button-destination(type='button', aria-label='Your destination or hotel name')
+          svg.laptop-form__button-icon
+            use(href='#search')
+        .laptop-form__input.laptop-form__input-destination
+          input#destination.input.input-laptop(
+            type='text',
+            name='destination',
+            title='Your destination or hotel name',
+            required=''
+          )
+          label(for='destination') Your destination or hotel name
+    .laptop-form__input-wrap
+      .laptop-form__input
+        input#check-in.input.input-laptop(type='text', name='date', title='Check-in', required='')
+        label(for='check-in') Check-in
+    .laptop-form__input-wrap
+      .laptop-form__input
+        input#check-out.input.input-laptop(type='text', name='date', title='Check-out', required='')
+        label(for='check-out') Check-out
+    .laptop-form__input-wrap.laptop-form__input--full-width
+      .laptop-form__properties-wrap
+        .laptop-form__input.laptop-form__input-properties
+          input#adults-md.input.input-laptop(type='text', name='adults', title='Adults', required='')
+          label(for='adults-md') Adults
+        .laptop-form__input.laptop-form__input-properties
+          input#children.input.input-laptop(type='text', name='children', title='Children', required='')
+          label(for='children') Children
+        .laptop-form__input.laptop-form__input-properties
+          input#rooms.input.input-laptop(type='text', name='rooms', title='Rooms', required='')
+          label(for='rooms') Rooms
+    button.button.button--blue.laptop-form__button-search
+      | Search

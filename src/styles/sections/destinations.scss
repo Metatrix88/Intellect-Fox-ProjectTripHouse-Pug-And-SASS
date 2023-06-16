@@ -1,0 +1,178 @@
+.destinations {
+  position: relative;
+  padding-top: var(--block-space);
+  padding-bottom: var(--block-space);
+
+  &__title {
+    margin-bottom: var(--title-bottom);
+  }
+
+  &__form {
+    margin-bottom: 64px;
+  }
+
+  &__button-regions,
+  &__button-cities {
+    max-width: 192px;
+    border: 2px solid transparent;
+    line-height: 1.05;
+  }
+
+  &__button-places {
+    max-width: 238px;
+    border: 2px solid transparent;
+    line-height: 1.05;
+  }
+
+  &__form > button:hover {
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+  }
+
+  &__form > button:focus {
+    background-color: var(--primary-color);
+    color: var(--general-white-color);
+  }
+
+  &__form > button:active {
+    background-color: var(--primary-color);
+    color: var(--general-white-color);
+    border-radius: var(--basic-radius);
+  }
+
+  &__wrap-cards {
+    margin-bottom: 90px;
+  }
+
+  &__wrap-img {
+    display: flex;
+    position: relative;
+  }
+
+  &__img {
+    max-width: 296px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-bottom: 24px;
+  }
+
+  &__button-book {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--general-white-color);
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    max-width: 128px;
+    padding: 13px;
+    line-height: 1.16;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--primary-color);
+    display: none;
+  }
+
+  &__wrap-img:hover img {
+    filter: brightness(40%);
+    background-color: rgb(56 56 56 / 40%);
+    box-shadow: inset 0 4px 70px rgb(56 56 56 / 50%);
+  }
+
+  &__wrap-img:hover button {
+    display: block;
+  }
+
+  &__subtitle {
+    color: var(--primary-color);
+  }
+
+  &__button-next {
+    left: 50%;
+    bottom: 121px;
+    transform: translateX(-50%);
+  }
+
+  &__button-next--transform {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  /* For mobile tablets: */
+  .destinations {
+    &__form {
+      margin-bottom: 48px;
+    }
+
+    &__button-regions,
+    &__button-cities,
+    &__button-places {
+      border: 1px solid var(--border-light-color);
+      width: 100%;
+      max-width: 150px;
+    }
+
+    &__wrap-cards {
+      margin-bottom: -32px;
+    }
+
+    &__card {
+      margin-bottom: calc(var(--unit) * 4);
+    }
+
+    &__img {
+      max-width: 328px;
+      margin-bottom: calc(var(--unit) * 2);
+    }
+
+    &__button-next {
+      top: 56.5%;
+      left: 93%;
+    }
+
+    &__button-next--transform {
+      transform: rotate(0deg);
+    }
+  }
+
+  .name-button--none {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  /* For mobile phones: */
+  .destinations {
+    &__form {
+      margin-bottom: 24px;
+    }
+
+    &__button-regions,
+    &__button-cities,
+    &__button-places {
+      max-width: 98px;
+    }
+
+    &__wrap-cards {
+      margin-bottom: 0;
+    }
+
+    &__card {
+      margin-bottom: 0;
+    }
+
+    &__img {
+      margin-bottom: var(--unit);
+    }
+
+    &__subtitle {
+      font-size: 12px;
+    }
+
+    &__button-next {
+      top: 59%;
+      left: 95%;
+    }
+  }
+}

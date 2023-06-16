@@ -1,0 +1,40 @@
+mixin apartments
+  section.container.apartments
+    h2.apartments__title Homes guests loves
+    ul.row
+      li.col-lg-3.col-md-6.col-sm-3.apartments__card
+        a.link.apartments__link(href='#', target='_blank')
+          img.images.apartments__img(
+            src=require('../../assets/images/jpg/apartments/hotel-leopold.jpg'),
+            alt='Hotel Leopold'
+          )
+          |
+          | Hotel Leopold
+        h3.apartments__subtitle Saint Petersburg, Russia
+      li.col-lg-3.col-md-6.col-sm-3.apartments__card
+        a.link.apartments__link(href='#', target='_blank')
+          img.images.apartments__img(
+            src=require('../../assets/images/jpg/apartments/apartment-sunshine.jpg'),
+            alt='Apartment Sunshine'
+          )
+          | Apartment Sunshine
+        h3.apartments__subtitle Santa Cruz de Tenerife, Spain
+      li.col-lg-3.col-md-6.col-sm-3.apartments__card._mobile-none
+        a.link.apartments__link(href='#', target='_blank')
+          img.images.apartments__img(
+            src=require('../../assets/images/jpg/apartments/villa-kunerad.jpg'),
+            alt='Villa Kunerad'
+          )
+          | Villa Kunerad
+        h3.apartments__subtitle Vysokie Tatry, Slowakia
+      li.col-lg-3.col-md-6.col-sm-3.apartments__card._mobile-none
+        a.link.apartments__link(href='#', target='_blank')
+          img.images.apartments__img(
+            src=require('../../assets/images/jpg/apartments/hostel-friendship.jpg'),
+            alt='Hostel Friendship'
+          )
+          | Hostel Friendship
+        h3.apartments__subtitle Berlin, Germany
+    button.button-next.apartments__button-next(type='button', aria-label='Next apartaments')
+      svg.button-next__icon
+        use(href='#arrow')

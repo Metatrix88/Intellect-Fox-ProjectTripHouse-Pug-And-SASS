@@ -1,0 +1,26 @@
+include ../content/index
+
+include ../sections/header
+include ../sections/top-section
+include ../sections/offer
+include ../sections/apartments
+include ../sections/destinations
+include ../sections/sing-up
+include ../sections/reviews
+include ../sections/footer
+
+include ../components/page
+include ../components/sprite
+
++page(pageInfo)
+  +sprite
+  +header
+
+  main.main
+    +top-section
+    +offer
+    +apartments
+    +destinations
+    +sing-up
+    +reviews
+  +footer

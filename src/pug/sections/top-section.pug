@@ -1,0 +1,21 @@
+include ../content/desktop-form
+include ../content/laptop-form
+
+mixin top-section
+  section.top-section
+    .container
+      h1.visually-hidden
+        | Search for accommodation, houses, hotels, apartments
+      h2.top-section__title
+        | Discover stays to&nbsp;live,&nbsp;work or just relax
+      +desktop-form
+      +laptop-form
+      ul.mobile-app
+        li
+          a.mobile-app__link(href='#', target='_blank', aria-label='Download the mobile app for android')
+            svg.mobile-app__icon-google
+              use(href='#google')
+        li
+          a.mobile-app__link(href='#', target='_blank', aria-label='Download the mobile app for apple')
+            svg.mobile-app__icon-apple
+              use(href='#app')

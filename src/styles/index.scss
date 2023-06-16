@@ -1,0 +1,32 @@
+@import 'base/reset';
+@import './base/fonts';
+@import '../assets/fonts/font-awesome/scss/fontawesome';
+@import 'abstracts/variables';
+
+@import 'layout/grid';
+@import 'layout/flex';
+
+@import 'base/my-reset';
+@import 'base/typography';
+@import 'base/container';
+@import 'components/logo';
+@import 'components/list';
+@import 'components/link';
+@import 'components/button';
+@import 'components/input';
+@import 'components/images';
+@import 'components/form';
+@import 'components/desktop-form';
+@import 'components/laptop-form';
+@import 'components/dots';
+
+@import 'sections/header';
+@import 'sections/main-mobile';
+@import 'sections/top-section';
+@import 'sections/mobile-app';
+@import 'sections/offer';
+@import 'sections/apartments';
+@import 'sections/destinations';
+@import 'sections/sing-up';
+@import 'sections/reviews';
+@import 'sections/footer';

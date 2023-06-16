@@ -1,0 +1,34 @@
+mixin destinations
+  section.container.destinations
+    h2.destinations__title The best destinations
+    form.form.destinations__form(action='#', method='#')
+      button.button.button--blue.destinations__button-regions
+        | Regions
+      button.button.destinations__button-cities Cities
+      button.button.destinations__button-places
+        | Places
+        span.name-button--none of interest
+    ul.row.destinations__wrap-cards
+      li.col-lg-3.col-md-6.col-sm-3.destinations__card
+        .destinations__wrap-img
+          img.destinations__img(src=require('../../assets/images/jpg/destinations/maldives.jpg'), alt='Maldives')
+          button.button.destinations__button-book Book now
+        h3.destinations__subtitle Maldives
+      li.col-lg-3.col-md-6.col-sm-3.destinations__card
+        .destinations__wrap-img
+          img.destinations__img(src=require('../../assets/images/jpg/destinations/spain.jpg'), alt='Spain')
+          button.button.destinations__button-book Book now
+        h3.destinations__subtitle Spain
+      li.col-lg-3.col-md-6.col-sm-3._mobile-none.destinations__card
+        .destinations__wrap-img
+          img.destinations__img(src=require('../../assets/images/jpg/destinations/norway.jpg'), alt='Norway')
+          button.button.destinations__button-book Book now
+        h3.destinations__subtitle Norway
+      li.col-lg-3.col-md-6.col-sm-3._mobile-none.destinations__card
+        .destinations__wrap-img
+          img.destinations__img(src=require('../../assets/images/jpg/destinations/island.jpg'), alt='Island')
+          button.button.destinations__button-book Book now
+        h3.destinations__subtitle Island
+    button.button-next.destinations__button-next(type='button', aria-label='Next destinations')
+      svg.button-next__icon.destinations__button-next--transform
+        use(href='#arrow')

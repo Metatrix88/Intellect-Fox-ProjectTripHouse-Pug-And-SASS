@@ -1,0 +1,85 @@
+.search-form--desktop {
+  border: 3px solid var(--border-light-color);
+  gap: 0;
+  border-radius: var(--basic-radius);
+  background-color: white;
+  font-size: 18px;
+  grid-template-columns:
+    minmax(150px, 1fr) minmax(150px, 259px) minmax(150px, 314px)
+    minmax(150px, 192px);
+}
+
+.desktop-form {
+  margin-bottom: 120px;
+
+  &__input {
+    position: relative;
+  }
+
+  &__input > label {
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+    pointer-events: all;
+  }
+
+  &__input-city {
+    border: 3px solid transparent;
+    border-radius: var(--basic-radius);
+    margin-left: -3px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+  }
+
+  &__input-date,
+  &__input-filter {
+    border: 3px solid transparent;
+    border-radius: var(--basic-radius);
+    margin-top: -3px;
+    margin-bottom: -3px;
+  }
+
+  &__input-city:hover,
+  &__input-date:hover,
+  &__input-filter:hover {
+    border: 3px solid var(--accent-color);
+    border-radius: var(--basic-radius);
+  }
+
+  &__input-city:focus,
+  &__input-date:focus,
+  &__input-filter:focus {
+    border: 3px solid var(--accent-color);
+  }
+
+  &__input-city:focus ~ label,
+  &__input-city:not(:focus):valid ~ label,
+  &__input-date:focus ~ label,
+  &__input-date:not(:focus):valid ~ label {
+    top: -40px;
+    color: var(--general-white-color);
+    opacity: 1;
+  }
+
+  &__button-search {
+    font-weight: 500;
+    margin-left: 3px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border: 3px solid var(--primary-color);
+  }
+
+  &__button-search:hover,
+  &__button-search:focus {
+    border: 3px solid var(--accent-color);
+  }
+}
+
+@media (max-width: 1024px) {
+  /* For mobile tablets: */
+  .desktop-form {
+    display: none;
+  }
+}

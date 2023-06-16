@@ -1,0 +1,101 @@
+mixin reviews
+  section.container.reviews
+    h2.reviews__title
+      span.reviews__title-lg Guests reviews
+      span.reviews__title-sm Reviews
+    ul.row.reviews__wrap-cards
+      li.col-lg-4.col-md-6.col-sm-6.reviews__card
+        .review__wrap-img
+          a(href='#')
+            img.review__img(src=require('../../assets/images/jpg/reviews/ubud-bali.jpg'), alt='ubud-bali')
+            p.review__price From 250 USD
+        .review__card-content
+          .review__wrap-links
+            .review__links
+              a.link.review__link.review__link--bold(href='#', target='_blank') Ubud Bali Resort&amp;SPA
+              h4 Bali, Indonesia
+            .review__rating
+              .review__number 9,4
+              p.review__number-review 1324 reviews
+          .review__reviewer
+            .review__wrap-icon
+              svg.review__icon
+                use(href='#review-icon')
+            .review__reviewer-info
+              p.review__reviewer-name Hanna Ivanova
+              .review__country
+                svg.review__country-flag
+                  use(href='#ua-flag')
+                p.review__country-name Ukraine
+          p.review__text
+            | Great location, really pleasant and clean rooms, but the thing
+            | that makes this such a good place to stay are the staff. All of
+            | the people are incredibly helpful and generous with their time
+            | and advice.
+      li.col-lg-4.col-md-6.col-sm-6.reviews__card._review__sm-none
+        .review__wrap-img
+          a(href='#')
+            img.review__img(src=require('../../assets/images/jpg/reviews/king-kong.jpg'), alt='king-kong')
+            p.review__price From 40 USD
+        .review__card-content
+          .review__wrap-links
+            .review__links
+              a.link.review__link.review__link--bold(href='#', target='_blank') King Kong Hostel
+              h4 Rotterdam, Netherlands
+            .review__rating
+              .review__number 8,9
+              p.review__number-review 2016 reviews
+          .review__reviewer
+            .review__wrap-icon
+              svg.review__icon
+                use(href='#review-icon')
+            .review__reviewer-info
+              p.review__reviewer-name Adam Smith
+              .review__country
+                svg.review__country-flag
+                  use(href='#usa-flag')
+                p.review__country-name USA
+          p.review__text
+            | I&apos;ve been in this hostel for a month and here is the best hostel
+            | of all
+          p.review__text
+            | Excellent management of excellent and ethical staff and bedrooms
+            | Bathrooms are always clean and excellent
+          p.review__text
+            | Most importantly, those who work here are kind and good-natured.
+      li.col-lg-4.col-md-6.col-sm-6.reviews__card.review__md-none
+        .review__wrap-img
+          a(href='#')
+            img.review__img(src=require('../../assets/images/jpg/reviews/ubud-bali.jpg'), alt='ubud-bali')
+            p.review__price From 100 USD
+        .review__card-content
+          .review__wrap-links
+            .review__links
+              a.link.review__link.review__link--bold(href='#', target='_blank') Rokoko Hotel
+              h4 Ourika, Marocco
+            .review__rating
+              .review__number 9,1
+              p.review__number-review 815 reviews
+          .review__reviewer
+            .review__wrap-icon
+              svg.review__icon
+                use(href='#review-icon')
+            .review__reviewer-info
+              p.review__reviewer-name Anika Messer
+              .review__country
+                svg.review__country-flag
+                  use(href='#de-flag')
+                p.review__country-name Germany
+          p.review__text
+            | Efficient, friendly, professional, and appropriately attentive.
+            | Great hotel in a great location. Easy access to all the
+            | surrounding historical sites. Staff is fantastic. Will
+            | definitely stay at this location during my next stay in Marocco.
+    button.button-next.reviews__button-next(type='button', aria-label='Next reviews')
+      svg.button-next__icon
+        use(href='#arrow')
+    .dots
+      .dot
+      .dot
+      .dot
+      .dot

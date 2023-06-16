@@ -1,0 +1,22 @@
+mixin sing-up
+  section.container.sing-up
+    .sing-up__wrap
+      .sing-up__logo
+        svg.sing-up__icon-lg
+          use(href='#sing-up')
+        svg.sing-up__icon-sm
+          use(href='#sing-up-logo-sm')
+      .sing-up__wrap-sm
+        h3.sing-up__title
+          | Sign up
+          span.sing-up__part-title in the app
+          |
+          | and
+          |
+          | get 20% off your first booking
+        button.button.sing-up__button
+          span.sing-up__button-lg-md Sign up
+          span.sing-up__button-sm Install
+      button.sing-up__button-close(aria-label='close sing-up')
+        svg.sing-up__icon-close
+          use(href='#close')
